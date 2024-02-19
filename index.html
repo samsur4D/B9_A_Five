@@ -57,7 +57,7 @@
         <h1 class="text-4xl font-bold text-green-500 mb-10">Digonto Paribahan</h1>
         <p class="text-white">If you need a bus with a restroom, Wi-Fi, or other amenities, the price will be higher.</p>
         <p class="text-white">A larger bus will naturally be more expensive than a smaller one.</p>
-        <button onclick="firstLook()" class="bg-green-500 p-3 rounded-lg font-bold">Buy Tickets</button>
+       <a href="#second-look"> <button onclick="firstLook()" class="bg-green-500 p-3 rounded-lg font-bold">Buy Tickets</button></a>
      </div>
       
      <!-- 3 card -->
@@ -114,7 +114,7 @@
                       <div><img src="images/cupon-devider.png" alt=""></div>
                       <!-- 3 -->
                       <div class="mt-auto mb-auto">
-                        <h3 class="text-3xl font-extrabold">New15</h3>
+                        <h3 class="text-3xl font-extrabold">NEW15</h3>
                         <p>Coupne Code</p>
                        </div>
                     </div>
@@ -131,7 +131,7 @@
                         <div><img src="images/cupon-devider.png" alt=""></div>
                         <!-- 3 -->
                         <div class="mt-auto mb-auto">
-                          <h3 class="text-3xl font-extrabold">Couple20</h3>
+                          <h3 class="text-3xl font-extrabold">Couple 20</h3>
                           <p>Coupne Code</p>
                          </div>
                       </div>
@@ -146,7 +146,7 @@
 <!-- offer section end -->
    </section>
 
-<section id="second-look" class="hidden">
+<section id="second-look" class="">
                 <!-- main section -->
     <section>
         <!-- ticket section -->
@@ -170,8 +170,8 @@
                                                            <div><h3 class="text-xl font-extrabold">Digaonto Paribahan</h3><h5>coach-008-WEB ! Business Class</h5></div>
                                                       </div>
                                                       <div>
-                                                            <button class="bg-green-300 px-5 py-3 rounded-md flex items-center text-green-700">
-                                                            <img src="images/seat-green.    png" alt="">50 seats Left</button>
+                                                            <button onclick="selectbutton()"  class="bg-green-300 px-5 py-3 rounded-md flex items-center text-green-700">
+                                                            <img src="images/seat-green.    png" alt=""><span id="reserved" class="mr-2">50</span><p></p>seats Left</button>
                                                      </div>
                                                  </div>
                                                         
@@ -256,10 +256,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>A</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">A1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">A2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">A3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    A4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">A1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">A2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">A3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    A4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -267,10 +267,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>B</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">B1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">B2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">B3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    B4</button>
+                                                                     <button onclick="selectbutton()"  class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">B1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">B2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">B3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    B4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -278,10 +278,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>C</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">C1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">C2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">C3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    C4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">C1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">C2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">C3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    C4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -289,10 +289,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>D</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">D1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2  rounded-md mr-5">D2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2  rounded-md mr-5">D3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2  rounded-md ">    D4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">D1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2  rounded-md mr-5">D2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2  rounded-md mr-5">D3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2  rounded-md ">    D4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -300,10 +300,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>E</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">E1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">E2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">E3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    E4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">E1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">E2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">E3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    E4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -311,10 +311,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>F</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">F1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">F2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">F3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    F4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">F1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">F2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">F3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    F4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -322,10 +322,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>G</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">G1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">G2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">G3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    G4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">G1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">G2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">G3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    G4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -333,10 +333,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>H</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">H1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">H2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">H3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    H4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">H1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">H2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">H3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    H4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -344,10 +344,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>I</p></div> 
                                                         <div>
-                                                         <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">I1</button>
-                                                         <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">I2</button>
-                                                         <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">I3</button>
-                                                         <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    I4</button>
+                                                         <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">I1</button>
+                                                         <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">I2</button>
+                                                         <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">I3</button>
+                                                         <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    I4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -355,10 +355,10 @@
                        <div class="flex">
                                         <div class="mr-4 mt-5"><p>J</p></div> 
                                                         <div>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">J1</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">J2</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md mr-5">J3</button>
-                                                                     <button class="bg-gray-100 w-20 mt-3 mb-3 py-2 rounded-md ">    J4</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">J1</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">J2</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md mr-5">J3</button>
+                                                                     <button onclick="selectbutton()" class="seat-button bg-gray-100 text-black w-20 mt-3 mb-3 py-2 rounded-md ">    J4</button>
                                                         </div>
                                         </div>
                        </div>
@@ -387,31 +387,17 @@
                                    <div class="bg-gray-100 px-10 py-5 rounded-xl">
                                             <div class="">
                                                      <ul>
-                                                         <div class="flex justify-around  border-dashed border-b border-gray-500 mb-5 mt-3 gap-20">
+                                                         <div class="flex justify-around  border-dashed border-b border-gray-500 mb-2 mt-3 gap-20">
                                                              <li class="text-xl font-semibold flex">Seat
-                                                                           <h2 class="bg-green-500 px-2 rounded-lg ml-1">5</h2></li>
+                                                                           <h2 id="seat-selected" class="bg-green-500 px-2 rounded-lg ml-1">0</h2></li>
                                                              <li class="text-xl font-semibold">Class</li>
                                                              <li class="text-xl font-semibold">Price</li>
                                                          </div>
                                                      </ul>
                                             </div>
-                                            <div class="">
-                                                     <ul>
-                                                         <div class="flex justify-around   mb-5 mt-3 gap-20">
-                                                             <li class="text-xl font-semibold flex">E2</li>
-                                                             <li class="text-xl font-semibold">Business Class</li>
-                                                             <li class="text-xl font-semibold">550</li>
-                                                         </div>
-                                                     </ul>
-                                            </div>
-                                            <div class="">
-                                                     <ul>
-                                                         <div class="flex justify-around   mb-5 mt-3 gap-20">
-                                                             <li class="text-xl font-semibold flex">E3</li>
-                                                             <li class="text-xl font-semibold">Business Class</li>
-                                                             <li class="text-xl font-semibold">550</li>
-                                                         </div>
-                                                     </ul>
+                                            
+                                            <div id="ticket-container" class="ticket-container text-black space-y-2">
+                                                   
                                             </div>
 
                                             <div class="flex justify-between  border-dashed border-t border-gray-500 ">
