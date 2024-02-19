@@ -21,3 +21,17 @@
     justify-content: center;
     flex-direction: column; 
 }
+
+.offerButton:hover{
+   
+    border-color:green;
+    color: green;
+}
+.offer{
+    border-color: green;
+}
+
+.intro{
+    margin-top: 4rem;
+    text-align: center;
+}
