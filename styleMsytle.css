@@ -1,6 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap')
+
+
+
 *{
     margin: 0px;
     padding: 0px;
+    font-family: "Raleway", sans-serif;
     box-sizing: border-box;
 }
 
@@ -34,4 +39,17 @@
 .intro{
     margin-top: 4rem;
     text-align: center;
+}
+.footer{
+    background-image: url(images/b54944f7322722034cfda55e601b4f8d-travel-bus-round-icon.png);
+    /* background-color: gray; */
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+    margin-top: 10px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
 }
