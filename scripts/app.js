@@ -1,8 +1,6 @@
 
 
-
-   
-   
+ 
 const allButton = document.getElementsByClassName('seat-button');
  let ticketPurchased = 0 ;
  let totalCost = 0 ;
@@ -68,19 +66,22 @@ function  applyCoupon(){
 
 
    
-    
-function xyz(){
-    let phnNumber = document.getElementById('number').value;
+    let phnNumber =document.getElementById('number').value ;
+function nextButton(){
+    //  let phnNumber = document.getElementById('number').value;
     console.log(phnNumber)
-    if(ticketPurchased < 1 && phnNumber === ""){
+    if(ticketPurchased < 1 && phnNumber === "" ){
         alert('Minimum 1 ticket purchase and must provide your phone number');
         return;
     }
-                        document.getElementById('popup').classList.toggle('hidden')
+    document.getElementById('popup').classList.toggle('hidden')
 }
+
 
 setInterval(() => {
     let phnNumber = document.getElementById('number').value;
+    console.log(phnNumber)
 }, 1000);
+
 
   

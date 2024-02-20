@@ -430,18 +430,18 @@
                        <section>
                                   <div>
                                        <h2 class="text-xl font-bold mt-3 mb-3">Passenger Name*</h2>
-                                       <input type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs">
+                                       <input id="pName" type="text" placeholder="Enter Your Name" class="input input-bordered w-full max-w-xs">
                                   </div>
                                   <div>
                                        <h2 class="text-xl font-bold mt-3 mb-3">Phone Number*</h2>
-                                       <input id="number" type="text" placeholder="Enter Your Phone No." class="input input-bordered w-full max-w-xs" />
+                                       <input id="number" value="" type="text" placeholder="Enter Your Phone No." class="input input-bordered w-full max-w-xs" />
                                   </div>
                                   <div>
                                        <h2 class="text-xl font-bold mt-3 mb-3">Email Id*</h2>
                                        <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full max-w-xs" />
                                   </div>
                                   <div>
-                                       <button onclick="xyz()"  id="nxtBtn" class="bg-green-600 w-full rounded-xl text-white font-semibold mt-4 py-2">Next</button>
+                                       <button onclick="nextButton()"  id="nxtBtn" class="bg-green-600 w-full rounded-xl text-white font-semibold mt-4 py-2">Next</button>
                                   </div>
                        </section>
             </section>
@@ -484,12 +484,12 @@
  <div id="popup" class=" inset-0 bg-white fixed flex items-center justify-center hidden ">
        <div class="bg-gray-300 flex flex-col items-center p-10 rounded-xl">
         <img class="" src="images/success.png" alt="">
-        <h2 class="text-2xl font-bold my-3">SUCCESS</h2>
+        <h2 class="text-2xl font-extrabold my-3">SUCCESS</h2>
         <p>Thank you for Booking Our Bus Seats. 
             We are working hard to find the best service and deals for you.</p>
             <p>Shortly you will find a confirmation in your email.</p>
 
-            <button onclick="xyz()" id="conbtn" class="bg-green-500 px-5 py-2 rounded-xl text-white mt-3 font-semibold">Continue</button>
+            <button onclick="nextButton()" id="conbtn" class="bg-green-500 px-5 py-2 rounded-xl text-white mt-3 font-semibold">Continue</button>
        </div>
 </div> 
 
