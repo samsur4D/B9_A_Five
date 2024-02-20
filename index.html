@@ -114,7 +114,7 @@
                       <div><img src="images/cupon-devider.png" alt=""></div>
                       <!-- 3 -->
                       <div class="mt-auto mb-auto">
-                        <h3 class="text-3xl font-extrabold">NEW15</h3>
+                        <h3 class="text-3xl font-extrabold"><span id="cuponInputNew15">NEW15</span></h3>
                         <p>Coupne Code</p>
                        </div>
                     </div>
@@ -171,7 +171,7 @@
                                                       </div>
                                                       <div>
                                                             <button onclick="selectbutton()"  class="bg-green-300 px-5 py-3 rounded-md flex items-center text-green-700">
-                                                            <img src="images/seat-green.    png" alt=""><span id="reserved" class="mr-2">50</span><p></p>seats Left</button>
+                                                            <img src="images/seat-green.    png" alt=""><span id="reserved" class="mr-2">40</span><p></p>seats Left</button>
                                                      </div>
                                                  </div>
                                                         
@@ -211,7 +211,7 @@
                                                          <section>
                                                               <div class="flex flex-col justify-center">
                                                                   <div class=""><img src="images/fare.png" alt="">
-                                                                     <h2 class="font-extrabold text-xl">550Taka</h2></div>
+                                                                     <h2 class="font-extrabold text-xl"><span id="price">550</span>Taka</h2></div>
                                                                   <h4>per seat</h4>
                                                               </div>
                                                          </section>
@@ -402,18 +402,24 @@
 
                                             <div class="flex justify-between  border-dashed border-t border-gray-500 ">
                                              <h2 class="text-xl font-semibold ">Total Price :</h2>
-                                             <h2 class="text-xl font-bold ">BDT 1100</h2>
+                                             <h2 class="text-xl font-bold ">BDT<span id="total-cost">0</span></h2>
                                             </div>
 
-                                            <div>
-                                             <input type="text" placeholder="Have You Any Coupon ?" class="input input-bordered w-full max-w-xs relative" />
-                                             <button class="bg-green-600 p-2 rounded-lg font-bold mt-2">Apply Coupon</button>
+                                            <div id="cuponSection" class="flex bg-white p-2 items-center w-full my-2">
+                                               
+                                                    <input id="cuponInput" type="text" placeholder="Have You Any Coupon ?" class="input outline-none p-1 w-full   relative" />
+                                                    <button onclick="applyCoupon()" class="bg-green-600 px-4 py-2  rounded-lg font-sm mt-2">Apply</button>
+                                                  
                                             </div>
 
+                                            <div id="discount-show" class="flex justify-between hidden">
+                                                <h1>Discount Price</h1>
+                                                <h1>BDT<span id="discount">0</span></h1>
+                                            </div>   
 
                                             <div class="flex justify-between">
                                              <h2 class="text-xl font-semibold ">Grand Total :</h2>
-                                             <h2 class="text-xl font-bold ">BDT 1100</h2>
+                                             <h2 class="text-xl font-bold ">BDT <span id="grand-total">0</span></h2>
                                             </div>
                                    </div>       
 
@@ -428,14 +434,14 @@
                                   </div>
                                   <div>
                                        <h2 class="text-xl font-bold mt-3 mb-3">Phone Number*</h2>
-                                       <input type="text" placeholder="Enter Your Phone No." class="input input-bordered w-full max-w-xs" />
+                                       <input id="number" type="text" placeholder="Enter Your Phone No." class="input input-bordered w-full max-w-xs" />
                                   </div>
                                   <div>
                                        <h2 class="text-xl font-bold mt-3 mb-3">Email Id*</h2>
                                        <input type="email" placeholder="Enter Your Email" class="input input-bordered w-full max-w-xs" />
                                   </div>
                                   <div>
-                                       <button class="bg-green-600 w-full rounded-xl text-white font-semibold mt-4 py-2">Next</button>
+                                       <button onclick="xyz()"  id="nxtBtn" class="bg-green-600 w-full rounded-xl text-white font-semibold mt-4 py-2">Next</button>
                                   </div>
                        </section>
             </section>
@@ -475,9 +481,21 @@
 
 </section>
 
+ <div id="popup" class=" inset-0 bg-white fixed flex items-center justify-center hidden ">
+       <div class="bg-gray-300 flex flex-col items-center p-10 rounded-xl">
+        <img class="" src="images/success.png" alt="">
+        <h2 class="text-2xl font-bold my-3">SUCCESS</h2>
+        <p>Thank you for Booking Our Bus Seats. 
+            We are working hard to find the best service and deals for you.</p>
+            <p>Shortly you will find a confirmation in your email.</p>
+
+            <button onclick="xyz()" id="conbtn" class="bg-green-500 px-5 py-2 rounded-xl text-white mt-3 font-semibold">Continue</button>
+       </div>
+</div> 
 
 
 
+    <script src="scripts/common function.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>
