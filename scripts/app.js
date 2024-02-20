@@ -1,38 +1,6 @@
 
 
-// create first look 
-// function firstLook(){
-//      const firstLook = document.getElementById('first-look');
-//      firstLook.classList.add('hidden');
-//      // show second look
-//      const secondLook = document.getElementById('second-look');
-//     secondLook.classList.remove('hidden');
-// }
 
-// function selectbutton(){
-//     const nonSelectedSeAt = document.querySelectorAll('seat-button');
-//     console.log(nonSelectedSeAt)
-// }
-
-// const allButton = document.getElementsByClassName('seat-button');
-//  let ticketPurchased = 0 ;
-// for(const button of allButton){
-//     button.addEventListener('click' , function(event){
-//          button.classList.remove('bg-gray-100','text-black');
-//          button.classList.add('bg-green-600','text-white') ; 
-//         if(ticketPurchased >= 4){
-//             alert('Cannot Buy Extra Ticket');
-//         }else{
-//             let reserved = parseInt(document.getElementById('reserved').innerText);
-//             if(reserved>0){
-//                 reserved--;
-//                 ticketPurchased++;
-//                 document.getElementById('seat-selected').innerText = ticketPurchased;
-//                 document.getElementById("reserved").innerText = reserved ;
-//             }
-//         }
-//     } )
-// }
    
    
 const allButton = document.getElementsByClassName('seat-button');
