@@ -86,6 +86,7 @@ function  applyCoupon(){
         document.querySelector('#discount-show').classList.remove('hidden');
         document.getElementById('discount').innerText = discountValue;
     }else if(cuponCode === "Couple 20"){
+        const discountValue = grandTotal * 0.2 ;
         const grandTotal2 = grandTotal - (grandTotal * 0.2);
         document.getElementById('grand-total').innerText = grandTotal2 ;
         document.getElementById('cuponSection').classList.add('hidden');
@@ -96,14 +97,7 @@ function  applyCoupon(){
         alert('invalid coupon')
     }
 }
-//   document.getElementById('nxtBtn').addEventListener('click',function(){
-//                    document.getElementById('popup').classList.add('hidden')
-//   })
 
- 
-//   document.getElementById('nxtBtn').addEventListener('click',function(){
-//     document.getElementById('conbtn').classList.remove('hidden')
-// })
 
    
     
