@@ -1,14 +1,24 @@
-
-
- 
-const allButton = document.getElementsByClassName('seat-button');
+const allButton = document.getElementsByClassName('seat-button');   // array return korbe 
  let ticketPurchased = 0 ;
  let totalCost = 0 ;
  let grandTotal = 0 ;
-for(const button of allButton){
+for(const button of allButton){  
     button.addEventListener('click' , function(event){
         if(ticketPurchased >= 4){
-            alert('Cannot Buy Extra Ticket');
+           
+            Swal.fire({
+                title: "Cannot Buy Extra Ticket",
+                width: 600,
+                padding: "3em",
+                color: "#716add",
+                background: "#fff url(/images/trees.png)",
+                backdrop: `
+                  rgba(0,0,123,0.4)
+                  url("/images/nyan-cat.gif")
+                  left top
+                  no-repeat
+                `
+              });
             return;
         }
          button.classList.remove('bg-gray-100','text-black');
@@ -39,7 +49,19 @@ for(const button of allButton){
 
 function  applyCoupon(){
     if(ticketPurchased < 4){
-        alert('Buy One More');
+        Swal.fire({
+            title: "You Must Purchase Four Tickets To Use The coupon",
+            width: 600,
+            padding: "3em",
+            color: "#716add",
+            background: "#fff url(/images/trees.png)",
+            backdrop: `
+              rgba(0,0,123,0.4)
+              url("/images/nyan-cat.gif")
+              left top
+              no-repeat
+            `
+          });
         return;
     }
     const cuponCode = document.getElementById('cuponInput').value ;
@@ -59,37 +81,20 @@ function  applyCoupon(){
         document.querySelector('#discount-show').classList.remove('hidden');
         document.getElementById('discount').innerText = discountValue;
     }
-    else{
-        alert('invalid coupon')
+    else{   
+        Swal.fire({
+            icon: "error",
+            title: "Oops...",
+            text: "Something went wrong!",
+            footer: '<a href="#">invalid coupon</a>'
+          });
     }
 }
 
 
    
-//     let phnNumber =document.getElementById('number').value.trim() ;
-// function nextButton(){
-//        let phnNumber = document.getElementById('number').value;
-//     console.log(phnNumber)
-     
-//     if (ticketPurchased < 1 && phnNumber ==="") {
-//         alert('Minimum 1 ticket purchase and must provide your phone number');
-//         return;
-//     }
-    
-//     document.getElementById('popup').classList.toggle('hidden')
-// }
-
-
-// setInterval(() => {
-//     let phnNumber = document.getElementById('number').value;
-// }, 1000);
-
-
   
-
-   
-  
-let phnNumber =document.getElementById('number').value.trim() ;
+let phnNumber =document.getElementById('number').value.trim();
 function nextButton(){
        let phnNumber = document.getElementById('number').value;
     console.log(phnNumber)
